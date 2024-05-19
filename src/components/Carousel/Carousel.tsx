@@ -18,8 +18,8 @@ interface CarouselProps {
   titles: {
     id: string;
     title: string;
-    className: string;
     subtitle: string;
+    className: string;
   }[];
 }
 
@@ -49,7 +49,7 @@ export const Carousel: React.FC<CarouselProps> = ({ slides, titles }) => {
   const computedIndex = currentIndex % slides.length;
 
   return (
-    <section {...handlers} className=" container mx-auto">
+    <section {...handlers} className=" container mx-auto ">
       <div className="overflow-hidden relative box-border pb-5 pt-5">
         <div className="h-[615px] z-10">
           <div
@@ -66,6 +66,8 @@ export const Carousel: React.FC<CarouselProps> = ({ slides, titles }) => {
                   width={image.width}
                   src={image.url}
                   alt={image.alt}
+                  // {idx === 0 && { priority: true }
+                  // {}
                 />
               </div>
             ))}

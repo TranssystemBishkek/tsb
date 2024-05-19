@@ -1,0 +1,19 @@
+{
+  "Header": {
+    "main": "Main",
+    "about": "About",
+    "services": "Services",
+    "calculator": "Calculator",
+    "contacts": "Contacts"
+  },
+  "Carousel": {
+    "title0": "We have been with you for over 20 years!",
+    "subtitle0": "We strive to make our big world a little smaller and closer by means of communication.",
+    "title1": "Individual approach to the client",
+    "subtitle1": "Understanding that each business is conducted in its own way, we assess your requirements and needs and offer individual solutions.",
+    "title2": "Flexible rates",
+    "subtitle2": "Rates change depending on how long and firmly we cooperate with you.",
+    "title3": "Promising cargo transportation schemes",
+    "subtitle3": "We will help develop efficient and convenient directions and schemes for transporting your cargo."
+  }
+}
