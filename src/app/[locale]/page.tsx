@@ -1,6 +1,8 @@
 import { Carousel } from "@/components";
 import { v4 as uuidv4 } from "uuid";
 import { useTranslations } from "next-intl";
+import { AboutUs } from "@/components/AboutUs";
+import { Services } from "@/components/Services";
 export default function Home() {
   const t = useTranslations("Carousel");
 
@@ -61,5 +63,11 @@ export default function Home() {
       className: "title secondary",
     },
   ];
-  return <Carousel slides={images} titles={titles} />;
+  return (
+    <>
+      <Carousel slides={images} titles={titles} />
+      <AboutUs />
+      <Services />
+    </>
+  );
 }
