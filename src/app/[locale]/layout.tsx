@@ -25,12 +25,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={montserrat.className}>
         <NextIntlClientProvider messages={messages}>
-          <ToastProvider>
-            <div className="z-20">
-              <Header />
-            </div>
-            <div className="z-10">{children}</div>
-          </ToastProvider>
+          <ToastProvider>{children}</ToastProvider>
         </NextIntlClientProvider>
       </body>
     </html>

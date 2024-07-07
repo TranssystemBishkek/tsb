@@ -1,11 +1,4 @@
 {
-  "Header": {
-    "main": "Main",
-    "about": "About",
-    "services": "Services",
-    "calculator": "Calculator",
-    "contacts": "Contacts"
-  },
   "Carousel": {
     "title0": "We have been with you for over 20 years!",
     "subtitle0": "We strive to make our big world a little smaller and closer by means of communication.",
@@ -82,5 +75,16 @@
     },
     "calculateButton": "Calculate",
     "feedbackMessage": "You will be contacted shortly. Thank you!"
+  },
+  "Common": {
+    "main": "Main",
+    "about": "About",
+    "services": "Services",
+    "calculator": "Calculator",
+    "contacts": "Contacts",
+    "phone": "Phone:",
+    "fax": "Fax:",
+    "address": "Address: Kyrgyz Republic, Bishkek, Razzakova Street, 15",
+    "copyright": "LLC 'Transsystem-Bishkek'"
   }
 }

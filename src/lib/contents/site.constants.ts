@@ -1,2 +1,11 @@
 export const siteUrl = process.env.NEXT_PUBLIC_URL;
 export const phone = "+996 (772) 57-82-72";
+export const primaryPhone = "+996 (312) 98-61-15";
+export const secondaryPhone = "+996 (312) 98-61-17";
+export const fax = "+996 (312) 98-61-16";
+export const email = "info@tsb.kg";
+export const facebook = "https://www.facebook.com/transsystem.bishkek/";
+export const instagram = "https://www.instagram.com/transsystem.bishkek/";
+export const whatsApp = "https://web.whatsapp.com/";
+export const telegram = "https://web.telegram.org/";
+export const geoLocation = "https://2gis.kg/bishkek/firm/70000001020174768";

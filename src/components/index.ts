@@ -4,3 +4,4 @@ export * from "./AboutUs";
 export * from "./Services";
 export * from "./Calculator";
 export * from "./Providers";
+export * from "./Footer";

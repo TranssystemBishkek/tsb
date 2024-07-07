@@ -1,4 +1,11 @@
-import { AboutUs, Calculator, Carousel, Services } from "@/components";
+import {
+  AboutUs,
+  Calculator,
+  Carousel,
+  Footer,
+  Header,
+  Services,
+} from "@/components";
 import { v4 as uuidv4 } from "uuid";
 import { useTranslations } from "next-intl";
 export default function Home() {
@@ -63,10 +70,12 @@ export default function Home() {
   ];
   return (
     <>
+      <Header />
       <Carousel slides={images} titles={titles} />
       <AboutUs />
       <Services />
       <Calculator />
+      <Footer />
     </>
   );
 }
