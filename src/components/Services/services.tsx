@@ -5,6 +5,7 @@ type Props = {};
 
 export const Services = (props: Props) => {
   const t = useTranslations("Services");
+
   return (
     <section className="our-services">
       <div className="container">

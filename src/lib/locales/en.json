@@ -37,5 +37,50 @@
     "lineFive": "Additional range of transport and forwarding services",
     "lineSix": "We will calculate the rates and cost of transportation quickly and absolutely free!",
     "lineSeven": "We have exceptional rates in Kyrgyzstan and Kazakhstan!"
+  },
+  "ServiceCalculation": {
+    "main": "Service Calculation",
+    "description": "The cost of freight transportation services by rail consists of several components:",
+    "componentOne": "international railway tariff + security services + forwarding commission.",
+    "note": "The above cost of services depends on many variables, such as:",
+    "departureStation": {
+      "title": "Departure Station",
+      "required": "Field must be filled"
+    },
+    "destinationStation": {
+      "title": "Destination Station",
+      "required": "Field must be filled"
+    },
+    "cargoCode": {
+      "title": "Cargo Code",
+      "note": "What type of cargo are you going to transport",
+      "required": "Field must be filled"
+    },
+    "cargoWeight": {
+      "title": "Cargo Weight",
+      "note": "Total tonnage",
+      "required": "Field must be filled"
+    },
+    "rollingStockType": {
+      "title": "Type of Rolling Stock",
+      "note": "Wagon, container, open-top wagon, platform, etc.",
+      "required": "Field must be filled"
+    },
+    "stockOwnership": {
+      "title": "Rolling Stock Ownership",
+      "note": "MPS or SPS",
+      "required": "Field must be filled"
+    },
+    "paidTerritories": {
+      "title": "Paid Territories through Forwarder",
+      "required": "Field must be filled"
+    },
+    "contactInfo": {
+      "title": "Phone number or email",
+      "note": "Please provide your contact details so that we can reach you",
+      "warning": "Without this information, we cannot contact you"
+    },
+    "calculateButton": "Calculate",
+    "feedbackMessage": "You will be contacted shortly. Thank you!"
   }
 }
