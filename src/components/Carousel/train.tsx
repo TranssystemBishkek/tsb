@@ -1,12 +1,20 @@
 import React from "react";
 import Image from "next/image";
-interface TrainProps {}
 
-export const Train: React.FC<TrainProps> = (props) => {
+interface TrainProps {
+  currentSlide: number;
+}
+
+export const Train: React.FC<TrainProps> = ({ currentSlide }) => {
   return (
     <>
       <div className="rails z-30"></div>
-      <div className="the-train z-40 w">
+      <div
+        className={`the-train z-40 `}
+        style={{
+          transform: `translateX(${currentSlide}%)`,
+        }}
+      >
         <Image
           height={135}
           width={1970}

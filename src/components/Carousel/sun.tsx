@@ -3,82 +3,102 @@
 import React from "react";
 import { useMediaQuery } from "usehooks-ts";
 import Image from "next/image";
+import { useElementPosition } from "@/lib";
 
 interface SunProps {
   currentSlide: number;
 }
 
-const sunPosition: {
-  small: { x: number; y: number }[];
-  medium: { x: number; y: number }[];
-  large: { x: number; y: number }[];
-} = {
-  small: [
+const sunPosition = {
+  mobile: [
     {
-      x: 110,
-      y: 250,
+      coordinates: {
+        x: 110,
+        y: 250,
+      },
     },
     {
-      x: 190,
-      y: 225,
+      coordinates: {
+        x: 190,
+        y: 225,
+      },
     },
     {
-      x: 210,
-      y: 245,
+      coordinates: {
+        x: 210,
+        y: 245,
+      },
     },
     {
-      x: 280,
-      y: 245,
-    },
-  ],
-  medium: [
-    {
-      x: 400,
-      y: 40,
-    },
-    {
-      x: 580,
-      y: 25,
-    },
-    {
-      x: 650,
-      y: 40,
-    },
-    {
-      x: 780,
-      y: 50,
+      coordinates: {
+        x: 280,
+        y: 245,
+      },
     },
   ],
-  large: [
+  tablet: [
     {
-      x: 650,
-      y: 130,
+      coordinates: {
+        x: 400,
+        y: 40,
+      },
     },
     {
-      x: 820,
-      y: 50,
+      coordinates: {
+        x: 580,
+        y: 25,
+      },
     },
     {
-      x: 900,
-      y: 40,
+      coordinates: {
+        x: 650,
+        y: 40,
+      },
     },
     {
-      x: 1000,
-      y: 70,
+      coordinates: {
+        x: 780,
+        y: 50,
+      },
+    },
+  ],
+  desktop: [
+    {
+      coordinates: {
+        x: 650,
+        y: 130,
+      },
+    },
+    {
+      coordinates: {
+        x: 820,
+        y: 50,
+      },
+    },
+    {
+      coordinates: {
+        x: 900,
+        y: 40,
+      },
+    },
+    {
+      coordinates: {
+        x: 1000,
+        y: 70,
+      },
     },
   ],
 };
 
 export const Sun: React.FC<SunProps> = ({ currentSlide }) => {
-  const screenSize = useMediaQuery("(min-width: 768px)") ? "large" : "small";
+  const currentPosition = useElementPosition(sunPosition, currentSlide);
 
-  const currentPosition = sunPosition[screenSize][currentSlide];
   return (
     <div
       style={{
         transform: `translate(${currentPosition.x}%,${currentPosition.y}%)`,
       }}
-      className="the-sun z-20"
+      className="the-sun z-20 max-w-[95px] h-auto"
     >
       <Image
         className="w-full h-auto"

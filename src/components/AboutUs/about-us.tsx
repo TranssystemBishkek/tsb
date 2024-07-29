@@ -1,4 +1,5 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import React from "react";
 
 type Props = {};
@@ -6,12 +7,12 @@ type Props = {};
 export const AboutUs = (props: Props) => {
   const t = useTranslations("AboutUs");
   return (
-    <section className="about-us">
+    <section className="about-us z-0">
       <div className="container">
         <div className="flex flex-wrap about-us-wrap">
           <div className="about-us-image-box">
             <img
-              src="./assets/images/moving-train.jpg"
+              src="/assets/images/moving-train.jpg"
               alt="moving train on railway with high column of smoke flowing river hills and railway on the foreground"
             />
           </div>

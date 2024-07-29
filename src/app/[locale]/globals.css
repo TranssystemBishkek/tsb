@@ -341,10 +341,6 @@ button,
   overflow: hidden;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
 
 .relative {
   position: relative;
@@ -522,14 +518,6 @@ INDEX PAGE
   color: #bab9c4;
 }
 
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 4px 10px rgba(84, 83, 95, 0.1);
-  box-shadow: 0px 4px 10px rgba(84, 83, 95, 0.1);
-}
 
 .header {
   display: -webkit-box;
@@ -1234,11 +1222,7 @@ header {
   border-top: 2px solid;
 }
 
-@media only screen and (min-width: 768px) {
-  .rails {
-    top: 75%;
-  }
-}
+
 
 @media only screen and (min-width: 992px) {
   .rails {
@@ -1249,7 +1233,7 @@ header {
 .the-train {
   position: absolute;
   top: 58%;
-  left: -45%;
+  left: -200%;
   width: 1970px;
   height: 135px;
   -webkit-transition: -webkit-transform 1s;
@@ -1266,16 +1250,16 @@ header {
 
 @media only screen and (min-width: 768px) {
   .the-train {
-    top: 53%;
+    top: 59%;
+    left: -55%;
   }
-  /* .the-train img {
-    width: 100%;
-  } */
+
 }
 
 @media only screen and (min-width: 992px) {
   .the-train {
     top: 60%;
+    left: -55%;
   }
 }
 
@@ -1459,7 +1443,7 @@ header {
 }
 
 .about-us-image-box {
-  height: 251px;
+  height: auto;
   overflow: hidden;
   border-radius: 10px;
 }

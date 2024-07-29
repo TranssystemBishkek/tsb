@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useSwipeable } from "react-swipeable";
 import { Sun } from "./sun";
@@ -49,8 +49,8 @@ export const Carousel: React.FC<CarouselProps> = ({ slides, titles }) => {
   const computedIndex = currentIndex % slides.length;
 
   return (
-    <section {...handlers} className=" container mx-auto ">
-      <div className="overflow-hidden relative box-border pb-5 pt-5">
+    <section {...handlers} className="container mx-auto">
+      <div className="overflow-hidden relative box-border pb-5 pt-5 ">
         <div className="h-[615px] z-10">
           <div
             style={{
@@ -85,7 +85,7 @@ export const Carousel: React.FC<CarouselProps> = ({ slides, titles }) => {
             ))}
           </div>
           <Sun currentSlide={computedIndex} />
-          <Train />
+          <Train currentSlide={currentIndex} />
         </div>
         <Dots currentSlide={computedIndex} handleNext={handleNext} />
       </div>
