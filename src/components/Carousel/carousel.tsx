@@ -51,12 +51,12 @@ export const Carousel: React.FC<CarouselProps> = ({ slides, titles }) => {
   return (
     <section {...handlers} className="container mx-auto">
       <div className="overflow-hidden relative box-border pb-5 pt-5 ">
-        <div className="h-[615px] z-10">
+        <div className="h-[615px]">
           <div
             style={{
               transform: `translateX(-${currentIndex * 100}%)`,
             }}
-            className={cn("landscapes frames layer z-20")}
+            className={cn("landscapes frames layer")}
           >
             {images.map((image, idx) => (
               <div key={image.id + idx} className="landscape frame">
@@ -75,7 +75,7 @@ export const Carousel: React.FC<CarouselProps> = ({ slides, titles }) => {
             style={{
               transform: `translateX(-${currentIndex * 100}%)`,
             }}
-            className="headlines frames layer h-[500px] z-50"
+            className="headlines frames layer h-[500px]"
           >
             {headlines.map((title, idx) => (
               <div key={title.id + idx} className="headline frame ">

@@ -342,21 +342,12 @@ button,
 }
 
 
-.relative {
-  position: relative;
-}
 
 .fixed {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+
 
 .flex {
   display: -webkit-box;
@@ -751,6 +742,7 @@ INDEX PAGE
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   max-width: 60px;
 }
@@ -763,23 +755,7 @@ INDEX PAGE
   fill: #2e75ff;
 }
 
-.extension-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  background-color: #fff;
-}
 
-.extension-menu--visible {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-}
 
 .navigation-text {
   display: inline-block;
@@ -917,7 +893,7 @@ INDEX PAGE
 /** extension-menu block **/
 .extension-menu {
   position: absolute;
-  top: 100%;
+  top: 64px;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -928,6 +904,7 @@ INDEX PAGE
 }
 
 .extension-menu--visible {
+  top: 64px;
   -webkit-transform: translateX(0);
   animation: menu 1s;
 }
@@ -2281,4 +2258,8 @@ footer {
   line-height: 14px;
   font-weight: 500;
   color: #5d5c6b;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }

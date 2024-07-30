@@ -98,7 +98,7 @@ export const Sun: React.FC<SunProps> = ({ currentSlide }) => {
       style={{
         transform: `translate(${currentPosition.x}%,${currentPosition.y}%)`,
       }}
-      className="the-sun z-20 max-w-[95px] h-auto"
+      className="the-sun max-w-[95px] h-auto"
     >
       <Image
         className="w-full h-auto"

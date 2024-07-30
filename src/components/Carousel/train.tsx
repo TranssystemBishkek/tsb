@@ -8,9 +8,9 @@ interface TrainProps {
 export const Train: React.FC<TrainProps> = ({ currentSlide }) => {
   return (
     <>
-      <div className="rails z-30"></div>
+      <div className="rails"></div>
       <div
-        className={`the-train z-40 `}
+        className={`the-train`}
         style={{
           transform: `translateX(${currentSlide}%)`,
         }}

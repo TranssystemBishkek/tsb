@@ -69,13 +69,15 @@ export default function Home() {
     },
   ];
   return (
-    <div>
+    <>
       <Header />
-      <Carousel slides={images} titles={titles} />
-      <AboutUs />
-      <Services />
-      <Calculator />
-      <Footer />
-    </div>
+      <div className="relative -z-10">
+        <Carousel slides={images} titles={titles} />
+        <AboutUs />
+        <Services />
+        <Calculator />
+        <Footer />
+      </div>
+    </>
   );
 }

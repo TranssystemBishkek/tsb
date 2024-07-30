@@ -7,11 +7,11 @@ interface DotsProps {
 
 export const Dots: React.FC<DotsProps> = ({ handleNext, currentSlide }) => {
   return (
-    <div className="parallax-controllers z-40">
+    <div className="parallax-controllers">
       <div className="button-controller">
         <button type="button" onClick={handleNext}>
           <svg
-            className={cn("z-20 roadline")}
+            className={cn("roadline")}
             width="67"
             height="18"
             viewBox="0 0 67 18"
@@ -32,7 +32,7 @@ export const Dots: React.FC<DotsProps> = ({ handleNext, currentSlide }) => {
             />
           </svg>
           <svg
-            className={cn("z-10", "lever", "left")}
+            className={cn("lever", "left")}
             width="16"
             height="65"
             viewBox="0 0 16 65"
