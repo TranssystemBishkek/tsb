@@ -35,11 +35,9 @@ export async function POST(req: Request) {
     );
 
     const data = await res.json();
-    console.log(JSON.stringify(data));
 
     return Response.json({ ok: true });
   } catch (error) {
-    console.error(JSON.stringify(error));
     return Response.json({ ok: false });
   }
 }

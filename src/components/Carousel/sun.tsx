@@ -1,15 +1,22 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import Image from "next/image";
-import { useElementPosition } from "@/lib";
 
 interface SunProps {
   currentSlide: number;
 }
+type ElementPosition = {
+  coordinates: { x: number; y: number };
+};
+type elementPositions = {
+  mobile: ElementPosition[];
+  tablet: ElementPosition[];
+  desktop: ElementPosition[];
+};
 
-const sunPosition = {
+const sunPosition: elementPositions = {
   mobile: [
     {
       coordinates: {
@@ -91,12 +98,30 @@ const sunPosition = {
 };
 
 export const Sun: React.FC<SunProps> = ({ currentSlide }) => {
-  const currentPosition = useElementPosition(sunPosition, currentSlide);
+  const isMobile = useMediaQuery("(max-width: 768px)");
+  const isTablet = useMediaQuery("(min-width: 769px) and (max-width: 1024px)");
+  const isDesktop = useMediaQuery("(min-width: 1025px)");
+  const [screenSize, setSize] = useState<keyof elementPositions>("mobile");
 
+  useEffect(() => {
+    if (isMobile) {
+      setSize("mobile");
+    }
+
+    if (isTablet) {
+      setSize("tablet");
+    }
+
+    if (isDesktop) {
+      setSize("desktop");
+    }
+  }, [isMobile, isTablet, isDesktop]);
+
+  const { x, y } = sunPosition[screenSize][currentSlide].coordinates;
   return (
     <div
       style={{
-        transform: `translate(${currentPosition.x}%,${currentPosition.y}%)`,
+        transform: `translate(${x}%,${y}%)`,
       }}
       className="the-sun max-w-[95px] h-auto"
     >

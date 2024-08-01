@@ -10,7 +10,7 @@ export const Train: React.FC<TrainProps> = ({ currentSlide }) => {
     <>
       <div className="rails"></div>
       <div
-        className={`the-train`}
+        className={`the-train z-[3]`}
         style={{
           transform: `translateX(${currentSlide}%)`,
         }}
