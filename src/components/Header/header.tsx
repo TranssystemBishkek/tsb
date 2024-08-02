@@ -4,27 +4,29 @@ import { LocaleSwitcher } from "./locale-switcher";
 import { useLocale, useTranslations } from "next-intl";
 import { Locale, cleanPhoneNumber, cn } from "@/lib";
 import { facebook, instagram, phone } from "@/lib/contents";
+import Image from "next/image";
 
 interface HeaderProps {
   toggleHandler: () => void;
 }
 
 export const Header: FC<HeaderProps> = ({ toggleHandler }) => {
-  const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations("Common");
   const locale = useLocale() as Locale;
 
-  const clickHandler = () => {
-    setIsOpen((prev) => !prev);
-    toggleHandler();
-  };
   return (
     <header className={"sticky top-0 z-[1] bg-white shadow"}>
       <div className="container">
         <div className="header py-4">
-          <div className="logo">
+          <div className="w-[214px] h-[34px]  overflow-hidden">
             <a href={"/"}>
-              <img src={`/assets/images/logo.svg`} alt="logo of company" />
+              <Image
+                className="object-cover w-full h-full"
+                width="1200"
+                height="630"
+                src={`/assets/images/logo-hd.png`}
+                alt="logo of company"
+              />
             </a>
           </div>
           <div className="navigation-desktop">
@@ -47,7 +49,7 @@ export const Header: FC<HeaderProps> = ({ toggleHandler }) => {
             </ul>
           </div>
           <LocaleSwitcher locale={locale} shouldHideOnMobileView />
-          <div className="hamburger-menu" onClick={clickHandler}>
+          <div className="hamburger-menu" onClick={toggleHandler}>
             <a className="hamburger-toggle">
               <span className={cn("hamburger-btn")} />
             </a>

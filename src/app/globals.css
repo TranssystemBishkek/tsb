@@ -1243,7 +1243,6 @@ INDEX PAGE
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
 }
 
 @media only screen and (min-width: 768px) {

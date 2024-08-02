@@ -5,4 +5,4 @@ export * from "./Services";
 export * from "./Calculator";
 export * from "./Providers";
 export * from "./Footer";
-export * from "./app-wrapper";
+export * from "./app-shell";

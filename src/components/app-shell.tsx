@@ -6,7 +6,7 @@ type Props = {
   children: ReactNode;
 };
 
-export const AppWrapper = ({ children }: Props) => {
+export const AppShell = ({ children }: Props) => {
   const [isDrawerOpen, setDrawerOpen] = useState<boolean>(false);
 
   const openDrawer = () => setDrawerOpen(true);

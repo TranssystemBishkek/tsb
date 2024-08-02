@@ -23,6 +23,7 @@ export const Carousel: React.FC<CarouselProps> = ({}) => {
       alt: "cities",
       width: 1200,
       height: 615,
+      priority: true,
     },
     {
       id: uuidv4(),
@@ -30,6 +31,7 @@ export const Carousel: React.FC<CarouselProps> = ({}) => {
       alt: "mountains",
       width: 1200,
       height: 615,
+      priority: false,
     },
     {
       id: uuidv4(),
@@ -37,6 +39,7 @@ export const Carousel: React.FC<CarouselProps> = ({}) => {
       alt: "villages",
       width: 1200,
       height: 615,
+      priority: false,
     },
     {
       id: uuidv4(),
@@ -44,6 +47,7 @@ export const Carousel: React.FC<CarouselProps> = ({}) => {
       alt: "sea",
       width: 1200,
       height: 615,
+      priority: false,
     },
   ];
 
@@ -118,6 +122,7 @@ export const Carousel: React.FC<CarouselProps> = ({}) => {
                   width={image.width}
                   src={image.url}
                   alt={image.alt}
+                  priority={image.priority}
                 />
               </div>
             ))}
