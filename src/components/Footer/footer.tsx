@@ -43,17 +43,29 @@ export const Footer = (props: Props) => {
               {/* menu list */}
               <ul className="flex flex-wrap">
                 <li>
-                  <a href="/" className="p-15 lh-38 medium">
+                  <a
+                    href="/"
+                    className="p-15 lh-38 medium"
+                    aria-label="Link to main section of page"
+                  >
                     {t("main")}
                   </a>
                 </li>
                 <li>
-                  <a href="#about-us" className="p-15 lh-38 medium">
+                  <a
+                    href="#about-us"
+                    className="p-15 lh-38 medium"
+                    aria-label="Link to about section of page"
+                  >
                     {t("about")}
                   </a>
                 </li>
                 <li>
-                  <a href="#our-services" className="p-15 lh-38 medium">
+                  <a
+                    href="#our-services"
+                    className="p-15 lh-38 medium"
+                    aria-label="Link to services section of page"
+                  >
                     {t("services")}
                   </a>
                 </li>
@@ -61,6 +73,7 @@ export const Footer = (props: Props) => {
                   <a
                     href="#calculation-of-services"
                     className="p-15 lh-38 medium"
+                    aria-label="Link to calculator section of page"
                   >
                     {t("calculator")}
                   </a>
@@ -70,7 +83,11 @@ export const Footer = (props: Props) => {
             </div>
             <div className="footer-contacts-list">
               <div className="contact-item footer-address">
-                <a href={geoLocation} className="link p-15 lh-30 medium">
+                <a
+                  href={geoLocation}
+                  className="link p-15 lh-30 medium"
+                  aria-label="Link to 2GIS"
+                >
                   {t("address")}
                 </a>
               </div>
@@ -78,6 +95,7 @@ export const Footer = (props: Props) => {
                 <a
                   href={`tel:${cleanPhoneNumber(primaryPhone)}`}
                   className="link footer-link"
+                  aria-label="primary phone numbe"
                 >
                   {`${t("phone")} ${primaryPhone}`}
                 </a>
@@ -86,6 +104,7 @@ export const Footer = (props: Props) => {
                 <a
                   href={`tel:${cleanPhoneNumber(secondaryPhone)}`}
                   className="link footer-link"
+                  aria-label="secondary phone number"
                 >
                   {`${t("phone")} ${secondaryPhone}`}
                 </a>
@@ -94,6 +113,7 @@ export const Footer = (props: Props) => {
                 <a
                   href={`tel:${cleanPhoneNumber(fax)}`}
                   className="link footer-link"
+                  aria-label="fax number"
                 >
                   {`${t("fax")} ${fax}`}
                 </a>
@@ -102,6 +122,7 @@ export const Footer = (props: Props) => {
                 <a
                   href={`tel:${cleanPhoneNumber(phone)}`}
                   className="link footer-link"
+                  aria-label="primary mobile number"
                 >
                   {`${t("phone")} ${phone}`}
                 </a>
@@ -111,7 +132,11 @@ export const Footer = (props: Props) => {
               <div className="">
                 <ul className="social-pages-line flex footer-social space-between">
                   <li className="grow-1">
-                    <a href={facebook} className="svg-box">
+                    <a
+                      href={facebook}
+                      className="svg-box"
+                      aria-label="Link to Facebook"
+                    >
                       <svg
                         width={26}
                         height={26}
@@ -127,7 +152,11 @@ export const Footer = (props: Props) => {
                     </a>
                   </li>
                   <li className="grow-1">
-                    <a href={instagram} className="svg-box">
+                    <a
+                      href={instagram}
+                      className="svg-box"
+                      aria-label="Link to Instagram"
+                    >
                       <svg
                         width={26}
                         height={26}
@@ -145,7 +174,11 @@ export const Footer = (props: Props) => {
                     </a>
                   </li>
                   <li className="grow-1">
-                    <a href={whatsApp} className="svg-box">
+                    <a
+                      href={whatsApp}
+                      className="svg-box"
+                      aria-label="Link to WhatsApp"
+                    >
                       <svg
                         width={26}
                         height={26}
@@ -167,7 +200,11 @@ export const Footer = (props: Props) => {
                     </a>
                   </li>
                   <li className="grow-1">
-                    <a href={telegram} className="svg-box">
+                    <a
+                      href={telegram}
+                      className="svg-box"
+                      aria-label="Link to Telegram"
+                    >
                       <svg
                         width={26}
                         height={26}

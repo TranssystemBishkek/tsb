@@ -24,17 +24,29 @@ export const DrawerContent = (props: Props) => {
             <nav className="navigation-item">
               <ul>
                 <li>
-                  <a href={"/"} className="navigation-text text-18">
+                  <a
+                    href={"/"}
+                    className="navigation-text text-18"
+                    aria-label="Link to main section of page"
+                  >
                     {t("main")}
                   </a>
                 </li>
                 <li>
-                  <a href={"#about-us"} className="navigation-text text-18">
+                  <a
+                    href={"#about-us"}
+                    className="navigation-text text-18"
+                    aria-label="Link to about section of page"
+                  >
                     {t("about")}
                   </a>
                 </li>
                 <li>
-                  <a href={"#our-services"} className="navigation-text text-18">
+                  <a
+                    href={"#our-services"}
+                    className="navigation-text text-18"
+                    aria-label="Link to services section of page"
+                  >
                     {t("services")}
                   </a>
                 </li>
@@ -42,13 +54,18 @@ export const DrawerContent = (props: Props) => {
                   <a
                     href={"#calculation-of-services"}
                     className="navigation-text text-18"
+                    aria-label="Link to main calculation of page"
                   >
                     {t("calculator")}
                   </a>
                 </li>
 
                 <li>
-                  <a href={"#contacts"} className="navigation-text text-18">
+                  <a
+                    href={"#contacts"}
+                    className="navigation-text text-18"
+                    aria-label="Link to contatcs section of page"
+                  >
                     {t("contacts")}
                   </a>
                 </li>
@@ -71,19 +88,28 @@ export const DrawerContent = (props: Props) => {
                 <a
                   href={`tel:${cleanPhoneNumber(phone)}`}
                   className="link phone-number phone-icon"
+                  aria-label="primary mobile number"
                 >
                   {phone}
                 </a>
               </div>
               <div className="contact-item">
-                <a href={`mailto:${email}`} className="link email-address">
+                <a
+                  href={`mailto:${email}`}
+                  className="link email-address"
+                  aria-label="email address"
+                >
                   {`E-mail: ${email}`}
                 </a>
               </div>
               <div className="social-pages">
                 <ul>
                   <li className="grow-1">
-                    <a href={facebook} className="svg-box">
+                    <a
+                      href={facebook}
+                      className="svg-box"
+                      aria-label="Link to Facebook"
+                    >
                       <svg
                         width="26"
                         height="26"
@@ -99,7 +125,11 @@ export const DrawerContent = (props: Props) => {
                     </a>
                   </li>
                   <li className="grow-1">
-                    <a href={instagram} className="svg-box">
+                    <a
+                      href={instagram}
+                      className="svg-box"
+                      aria-label="Link to Instagram"
+                    >
                       <svg
                         width="26"
                         height="26"
@@ -117,7 +147,11 @@ export const DrawerContent = (props: Props) => {
                     </a>
                   </li>
                   <li className="grow-1">
-                    <a href={whatsApp} className="svg-box">
+                    <a
+                      href={whatsApp}
+                      className="svg-box"
+                      aria-label="Link to WhatsApp"
+                    >
                       <svg
                         width="26"
                         height="26"
@@ -139,7 +173,11 @@ export const DrawerContent = (props: Props) => {
                     </a>
                   </li>
                   <li className="grow-12">
-                    <a href={telegram} className="svg-box">
+                    <a
+                      href={telegram}
+                      className="svg-box"
+                      aria-label="Link to Telegram"
+                    >
                       <svg
                         width="26"
                         height="26"

@@ -88,9 +88,14 @@ export const Calculator = (props: Props) => {
                 </svg>
               </div>
               <div className="input-box">
-                <input {...register("from")} type="text" />
+                <input
+                  {...register("from")}
+                  id="from"
+                  type="text"
+                  aria-label={t("departureStation.title")}
+                />
                 <div className="label-box">
-                  <label htmlFor="" className="p-14 lh-20 regular">
+                  <label htmlFor="from" className="p-14 lh-20 regular">
                     {t("departureStation.title")}
                   </label>
                 </div>
@@ -122,9 +127,14 @@ export const Calculator = (props: Props) => {
                 </svg>
               </div>
               <div className="input-box">
-                <input {...register("to")} type="text" />
+                <input
+                  {...register("to")}
+                  id="to"
+                  type="text"
+                  aria-label={t("destinationStation.title")}
+                />
                 <div className="label-box">
-                  <label htmlFor="" className="p-14 lh-20 regular">
+                  <label htmlFor="to" className="p-14 lh-20 regular">
                     {t("destinationStation.title")}
                   </label>
                 </div>
@@ -173,9 +183,14 @@ export const Calculator = (props: Props) => {
                 </svg>
               </div>
               <div className="input-box">
-                <input {...register("code")} type="text" />
+                <input
+                  {...register("code")}
+                  id="code"
+                  type="text"
+                  aria-label={t("cargoCode.title")}
+                />
                 <div className="label-box">
-                  <label htmlFor="" className="p-14 lh-20 regular">
+                  <label htmlFor="code" className="p-14 lh-20 regular">
                     {t("cargoCode.title")}
                   </label>
                 </div>
@@ -206,9 +221,15 @@ export const Calculator = (props: Props) => {
                 </svg>
               </div>
               <div className="input-box">
-                <input {...register("weight")} type="text" />
+                <input
+                  {...register("weight")}
+                  id="weight"
+                  type="text"
+                  aria-label={t("rollingStockType.title")}
+                />
+
                 <div className="label-box">
-                  <label htmlFor="" className="p-14 lh-20 regular">
+                  <label htmlFor="weight" className="p-14 lh-20 regular">
                     {t("rollingStockType.title")}
                   </label>
                 </div>
@@ -243,9 +264,14 @@ export const Calculator = (props: Props) => {
                 </svg>
               </div>
               <div className="input-box">
-                <input {...register("type")} type="text" />
+                <input
+                  {...register("type")}
+                  id="type"
+                  type="text"
+                  aria-label={t("stockOwnership.title")}
+                />
                 <div className="label-box">
-                  <label htmlFor="" className="p-14 lh-20 regular">
+                  <label htmlFor="type" className="p-14 lh-20 regular">
                     {t("stockOwnership.title")}
                   </label>
                 </div>
@@ -278,7 +304,12 @@ export const Calculator = (props: Props) => {
                 </svg>
               </div>
               <div className="input-box">
-                <input {...register("options")} type="text" />
+                <input
+                  {...register("options")}
+                  id="options"
+                  type="text"
+                  aria-label={t("stockOwnership.title")}
+                />
                 <div className="label-box">
                   <label htmlFor="options" className="p-14 lh-20 regular">
                     {t("stockOwnership.title")}
@@ -313,9 +344,14 @@ export const Calculator = (props: Props) => {
                 </svg>
               </div>
               <div className="input-box">
-                <input {...register("domains")} type="text" />
+                <input
+                  {...register("domains")}
+                  id="domains"
+                  type="text"
+                  aria-label={t("paidTerritories.title")}
+                />
                 <div className="label-box">
-                  <label htmlFor="" className="p-14 lh-20 regular">
+                  <label htmlFor="domains" className="p-14 lh-20 regular">
                     {t("paidTerritories.title")}
                   </label>
                 </div>
@@ -343,9 +379,14 @@ export const Calculator = (props: Props) => {
                 </svg>
               </div>
               <div className="input-box">
-                <input {...register("contact")} type="text" />
+                <input
+                  {...register("contact")}
+                  id="contact"
+                  type="text"
+                  aria-label={t("contactInfo.title")}
+                />
                 <div className="label-box">
-                  <label htmlFor="" className="p-14 lh-20 regular">
+                  <label htmlFor="contact" className="p-14 lh-20 regular">
                     {t("contactInfo.title")}
                   </label>
                 </div>

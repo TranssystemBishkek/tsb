@@ -43,24 +43,28 @@ export const Dots: React.FC<DotsProps> = ({ handleNext, currentSlide }) => {
         <div>
           <button
             type="button"
+            aria-label={currentSlide === 0 ? "active slide" : "inactive slide"}
             className={cn("radio-btn ", currentSlide === 0 ? "active" : "")}
           />
         </div>
         <div>
           <button
             type="button"
+            aria-label={currentSlide === 0 ? "active slide" : "inactive slide"}
             className={cn("radio-btn ", currentSlide === 1 ? "active" : "")}
           />
         </div>
         <div>
           <button
             type="button"
+            aria-label={currentSlide === 0 ? "active slide" : "inactive slide"}
             className={cn("radio-btn ", currentSlide === 2 ? "active" : "")}
           />
         </div>
         <div>
           <button
             type="button"
+            aria-label={currentSlide === 0 ? "active slide" : "inactive slide"}
             className={cn(
               "radio-btn remove-line",
               currentSlide === 3 ? "active" : ""
