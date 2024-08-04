@@ -8,13 +8,14 @@ import {
 } from "@/components";
 import { metaData } from "@/lib/contents";
 import { Metadata } from "next";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: metaData.title,
   description: metaData.description,
   openGraph: {
     type: "website",
-    url: "https://tsb.kg",
+    url: metaData.url,
     title: metaData.title,
     description: metaData.description,
     siteName: metaData.title,
@@ -27,9 +28,25 @@ export const metadata: Metadata = {
       },
     ],
   },
+  twitter: {
+    card: "summary_large_image",
+    site: metaData.url,
+    title: metaData.title,
+    description: metaData.description,
+    creator: metaData.title,
+    images: {
+      url: `${metaData.url}/assets/images/logo-hd.png`,
+      alt: "Company logo",
+    },
+  },
 };
 
-export default function Home() {
+export default function Home({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
   return (
     <AppShell>
       <Carousel />
