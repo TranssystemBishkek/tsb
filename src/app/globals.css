@@ -1591,6 +1591,25 @@ INDEX PAGE
   background-image: url(/assets/images/our-services-bg-mobile.jpg);
 }
 
+@supports (background-image: url("data:image/webp;base64,UklGRh4AAABXRUJQVlA4IBgAAADQAgCdASoCAAIAAkA4JaQAA3AA/vuUAAA=")) {
+  .route {
+    background-image: url(/assets/images/our-services-bg-mobile.webp);
+  }
+
+  @media only screen and (min-width: 476px) {
+    .route {
+      background-image: url(/assets/images/our-services-bg-tablet.webp);
+    }
+  }
+
+  @media only screen and (min-width: 1199px) {
+    .route {
+      background-image: url(/assets/images/our-services-bg-desktop.webp);
+    }
+  }
+}
+
+
 @media only screen and (min-width: 476px) {
   .route {
     margin-top: -20%;

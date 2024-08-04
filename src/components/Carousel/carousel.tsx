@@ -117,7 +117,6 @@ export const Carousel: React.FC<CarouselProps> = ({}) => {
             {images.map((image, idx) => (
               <div key={image.id + idx} className="relative landscape frame">
                 <Image
-                  className="w-full h-auto"
                   height={image.height}
                   width={image.width}
                   src={image.url}

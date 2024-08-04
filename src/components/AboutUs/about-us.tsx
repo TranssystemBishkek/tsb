@@ -10,8 +10,10 @@ export const AboutUs = (props: Props) => {
     <section className="about-us z-0">
       <div className="container">
         <div className="flex flex-wrap about-us-wrap">
-          <div className="about-us-image-box">
-            <img
+          <div className="">
+            <Image
+              width={538}
+              height={664}
               src="/assets/images/moving-train.jpg"
               alt="moving train on railway with high column of smoke flowing river hills and railway on the foreground"
             />
