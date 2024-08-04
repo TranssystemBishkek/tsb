@@ -49,7 +49,7 @@ export const Calculator = (props: Props) => {
   };
 
   return (
-    <section className=" relative -z-10 calculation-of-services">
+    <section className="relative calculation-of-services">
       <div className="container">
         <h2
           id="calculation-of-services"
