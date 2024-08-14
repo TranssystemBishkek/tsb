@@ -18,14 +18,14 @@ export const AboutUs = (props: Props) => {
               alt="moving train on railway with high column of smoke flowing river hills and railway on the foreground"
             />
           </div>
-          <div className="about-us-description-box">
+          <div className="max-w-[547px]">
             <h2
               id="about-us"
-              className="about-us-title h-50 lh-60 extra-bold text-white"
+              className="bold text-5xl text-blue-600 mt-4 md:mt-0 mb-4"
             >
               {t("main")}
             </h2>
-            <span className="h-30 lh-36 bold text-white">{t("mission")}</span>
+            <h3 className="bold text-2xl text-gray-700 mb-4">{t("mission")}</h3>
             <p className="p-17 lh-30 medium">{t("lineOne")}</p>
             <p className="p-17 lh-30 regular">{t("lineTwo")}</p>
             <p className="p-17 lh-30 regular">{t("lineThree")}</p>
