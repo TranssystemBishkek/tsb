@@ -1,8 +1,8 @@
 import {
   AboutUs,
   AppShell,
-  Calculator,
   Carousel,
+  ContactUs,
   Footer,
   Services,
 } from "@/components";
@@ -52,7 +52,7 @@ export default function Home({
       <Carousel />
       <AboutUs />
       <Services />
-      <Calculator />
+      <ContactUs />
       <Footer />
     </AppShell>
   );

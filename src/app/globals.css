@@ -1736,11 +1736,6 @@ INDEX PAGE
   font-family: "Roboto", sans-serif;
 }
 
-@media only screen and (min-width: 992px) {
-  .calculation-of-services p {
-    padding-left: 12%;
-  }
-}
 
 .calculation-of-services-paragraph {
   position: relative;

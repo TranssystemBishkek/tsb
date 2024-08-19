@@ -21,7 +21,7 @@ export const AboutUs = (props: Props) => {
           <div className="max-w-[547px]">
             <h2
               id="about-us"
-              className="bold text-5xl text-blue-600 mt-4 md:mt-0 mb-4"
+              className="bold text-5xl text-blue-600 mt-4 lg:mt-0 mb-4"
             >
               {t("main")}
             </h2>

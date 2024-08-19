@@ -74,7 +74,9 @@
       "warning": "Without this information, we cannot contact you"
     },
     "calculateButton": "Calculate",
-    "feedbackMessage": "You will be contacted shortly. Thank you!"
+    "feedbackMessage": "You will be contacted shortly. Thank you!",
+    "contactUs": "To get a service cost estimate, you can contact us at the following phone number:",
+    "callNow": "Call Now"
   },
   "Common": {
     "main": "Main",

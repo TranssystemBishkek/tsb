@@ -9,6 +9,10 @@ import { Bounce, toast } from "react-toastify";
 
 type Props = {};
 
+/**
+ *
+ * @deprecated
+ */
 export const Calculator = (props: Props) => {
   const t = useTranslations("ServiceCalculation");
 
