@@ -1,5 +1,9 @@
 import { FormValues } from "./request.dto";
 
+/**
+ *
+ * @deprecated
+ */
 export async function POST(req: Request) {
   try {
     const chatId = process.env.CHAT_ID;
