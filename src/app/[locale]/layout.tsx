@@ -4,9 +4,13 @@ import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { ToastProvider } from "@/components";
 import { locales } from "@/lib";
+import { jsonLd, metadata as MetaData } from "./seo";
+
 import "../globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin", "cyrillic"] });
+
+export const metadata = MetaData;
 
 export async function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -28,6 +32,10 @@ export default async function Layout({
         <NextIntlClientProvider messages={messages}>
           <ToastProvider>{children}</ToastProvider>
         </NextIntlClientProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );

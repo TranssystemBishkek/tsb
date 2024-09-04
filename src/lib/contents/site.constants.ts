@@ -7,10 +7,16 @@ export const facebook = "https://www.facebook.com/transsystem.bishkek/";
 export const instagram = "https://www.instagram.com/transsystem.bishkek/";
 export const whatsApp = "https://web.whatsapp.com/";
 export const telegram = "https://web.telegram.org/";
-export const geoLocation = "https://2gis.kg/bishkek/firm/70000001020174768";
+export const geoLocation = "https://go.2gis.com/uiyk2r";
 export const metaData = {
   url: process.env.NEXT_PUBLIC_URL,
   title: "Транссистема — Бишкек — железнодорожные перевозки",
   description:
-    "Надежные железнодорожные перевозки в Кыргызстане. Грузоперевозки по СНГ, международные перевозки, транспортировка товаров и логистические услуги. Доставка грузов по железной дороге с гарантией безопасности и сроков.",
+    "Надежные железнодорожные грузоперевозки в Кыргызстане. Грузоперевозки по СНГ, международные перевозки, транспортировка товаров и логистические услуги. Доставка грузов по железной дороге с гарантией безопасности и сроков.",
 };
+export const streetAddress = "ул. Раззакова, д. 15";
+export const addressLocality = "г. Бишкек";
+export const addressCountry = "Кыргызстан";
+export const fullAddress = `${addressCountry}, ${addressLocality}, ${streetAddress}`;
+export const CEO = "Исмаилова Жанна Асановна";
+export const foundingDate = "2000-07-01";
