@@ -7,7 +7,7 @@ type Props = {};
 export const AboutUs = (props: Props) => {
   const t = useTranslations("AboutUs");
   return (
-    <section className="about-us z-0">
+    <main className="about-us z-0">
       <div className="container">
         <div className="flex flex-wrap about-us-wrap">
           <div className="">
@@ -72,6 +72,6 @@ export const AboutUs = (props: Props) => {
           </div>
         </div>
       </div>
-    </section>
+    </main>
   );
 };

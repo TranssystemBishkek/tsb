@@ -29,7 +29,7 @@ export const Header: FC<HeaderProps> = ({ toggleHandler }) => {
               />
             </a>
           </div>
-          <div className="navigation-desktop">
+          <nav className="navigation-desktop">
             <ul className="navigation-desktop-list items-center">
               <li className="navigation-desktop-link">
                 <a href={"/"}>{t("main")}</a>
@@ -47,7 +47,7 @@ export const Header: FC<HeaderProps> = ({ toggleHandler }) => {
                 <a href={`#contacts`}>{t("contacts")}</a>
               </li>
             </ul>
-          </div>
+          </nav>
           <LocaleSwitcher locale={locale} shouldHideOnMobileView />
           <div className="hamburger-menu" onClick={toggleHandler}>
             <a className="hamburger-toggle">
@@ -55,7 +55,7 @@ export const Header: FC<HeaderProps> = ({ toggleHandler }) => {
             </a>
           </div>
         </div>
-        <div className="navigation-contacts">
+        <nav className="navigation-contacts">
           <svg
             width="22"
             height="22"
@@ -102,7 +102,7 @@ export const Header: FC<HeaderProps> = ({ toggleHandler }) => {
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
     </header>
   );

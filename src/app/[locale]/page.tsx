@@ -6,8 +6,6 @@ import {
   Footer,
   Services,
 } from "@/components";
-import { metaData } from "@/lib/contents";
-import { Metadata } from "next";
 import { unstable_setRequestLocale } from "next-intl/server";
 
 export default function Home({
