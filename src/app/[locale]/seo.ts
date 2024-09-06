@@ -46,6 +46,9 @@ export const metadata: Metadata = {
       alt: "Company logo",
     },
   },
+  verification: {
+    google: "heWAbG6_ngsXNh31EgG20d-PjC9YqJ4MuWhr-UhkLyA",
+  },
 };
 
 export const jsonLd: WithContext<Organization> = {
@@ -65,9 +68,10 @@ export const jsonLd: WithContext<Organization> = {
   },
   address: {
     "@type": "PostalAddress",
+    postalCode: "720040",
     streetAddress: streetAddress,
     addressLocality: addressLocality,
-    addressCountry: addressCountry,
+    addressCountry: "ISO 3166-2:KG",
   },
   sameAs: [facebook, instagram, whatsApp, telegram],
   description: metaData.description,
