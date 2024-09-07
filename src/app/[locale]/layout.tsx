@@ -1,4 +1,6 @@
-import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 import { Montserrat } from "next/font/google";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
@@ -32,10 +34,13 @@ export default async function Layout({
         <NextIntlClientProvider messages={messages}>
           <ToastProvider>{children}</ToastProvider>
         </NextIntlClientProvider>
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
